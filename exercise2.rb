@@ -8,3 +8,7 @@ class Cat
   end
 
 end
+
+
+kevin = new.Cat("Kevin", "tuna", "4")
+chuck_d = new.Cat("Chuck D", "cat chow", "12")
