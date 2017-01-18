@@ -24,4 +24,8 @@ class Paperboy
     @experience += papers_delivered
   end
 
+  def report
+    puts "I'm #{@name}. Today I delivered #{papers_delivered} and earned #{@earnings}"
+  end
+
 end
