@@ -28,4 +28,8 @@ class Player
     @score = 0
   end
 
+  def level_up
+    @lives += 1
+  end
+
 end
