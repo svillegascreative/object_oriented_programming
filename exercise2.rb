@@ -10,5 +10,5 @@ class Cat
 end
 
 
-kevin = new.Cat("Kevin", "tuna", "4")
-chuck_d = new.Cat("Chuck D", "cat chow", "12")
+kevin = Cat.new("Kevin", "tuna", 4)
+chuck_d = Cat.new("Chuck D", "cat chow", 12)
