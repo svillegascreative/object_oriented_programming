@@ -32,4 +32,20 @@ class Player
     @lives += 1
   end
 
+  def collect_treasure(treasure)
+    @gold_coins += treasure
+
+    # Increase score by 1 for every 10 gold coins collected
+    # NOTE: This works ONLY because you cannot lose coins
+    # and you cannot add to your score through other actions (methods)
+    @score = @gold_coins / 10
+
+    # Run level_up whenever score increases by 10
+    # NOTE: This works, because score never decreases
+    # (When you lose all your lives, game is restarted)
+    if @score % 10 == 0
+      level_up
+    end
+  end
+
 end
