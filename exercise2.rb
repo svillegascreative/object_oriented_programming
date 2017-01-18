@@ -17,6 +17,10 @@ class Cat
     end
   end
 
+  def meow
+    puts "My name is #{@name} and I eat #{@preferred_food} at #{eats_at}. Meow!"
+  end
+
 end
 
 
@@ -24,4 +28,5 @@ kevin = Cat.new("Kevin", "tuna", 17)
 chuck_d = Cat.new("Chuck D", "cat chow", 12)
 
 # test
-puts kevin.eats_at
+puts kevin.meow
+puts chuck_d.meow
