@@ -6,5 +6,8 @@ class BankAccount
     @interest_rate = interest_rate
   end
 
+  def deposit(amount)
+    @balance += amount
+  end
 
 end
